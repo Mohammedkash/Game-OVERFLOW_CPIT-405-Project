@@ -1,0 +1,850 @@
+*{
+  margin: 0;
+    padding:initial;
+}
+
+
+
+/* -----------------------------------------------------------------------------
+
+# Slider Animation Styles
+
+----------------------------------------------------------------------------- */
+
+/* Slider In HOME PAGE */
+#slider {
+  overflow: hidden;
+}
+
+#slider .slideFig {
+  /* height: 300px; */
+  width: 1000%;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  /* margin-bottom:1%; */
+  animation: 8s slider ease-in-out infinite;
+}
+
+#slider figure img {
+  /* width: 20%; */
+  height: 499px;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+
+  20% {
+
+    left: 0;
+  }
+
+  25% {
+
+    left: -100%;
+  }
+
+  45% {
+
+    left: -100%;
+  }
+
+  /* 50% {
+
+  left: -200%;
+} */
+  /* 70% {
+
+  left: -200%;
+}
+75% {
+
+  left: -300%;
+} */
+  /* 95% {
+
+  left: -300%;
+}
+100% {
+
+  left: -400%;
+} */
+}
+
+
+
+/* -----------------------------------------------------------------------------
+
+# All Common Styles
+
+----------------------------------------------------------------------------- */
+html {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  height: 100%;
+}
+
+body { /*body means all body page , but here the what is seen is the middle frame*/
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.1px;
+  line-height: 1.8;
+  color: white;
+  overflow-x: hidden;
+  background-color: #11052C ;
+}
+
+body img {
+  max-width: 100%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+
+h1, .h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.1px;
+  line-height: 1.8;
+  color: #FFE3D3;
+  /* margin: 0 0 0% 0; */
+}
+
+p:last-child {
+  margin: 0;
+}
+
+
+/* update btn */
+a.boxed-btn {
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+
+  border: 2px solid #FEE3D3;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+a.bordered-btn {
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  color: #fff;
+  border: 2px solid #FEE3D3;
+  padding: 7px 20px;
+}
+
+
+a.boxed-btn, a.bordered-btn, a.cart-btn {
+  border-radius: 50px;
+  margin-left: 3.5%;
+  margin-top: 11%;
+  margin-bottom: 5%;
+}
+
+
+.section-title {
+  margin-bottom: 80px;
+}
+
+
+.breadcrumb-section {
+ 
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  z-index: 1;
+  background-attachment: fixed;
+  background-color: #11052C;
+  padding-top: 5%;
+ 
+}
+
+.breadcrumb-section:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: #281d41;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+
+/* -----------------------------------------------------------------------------
+
+# Header Styles
+
+----------------------------------------------------------------------------- */
+.main-menu-wrap {
+  position: relative;
+  text-align: center;
+}
+nav.main-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.Quotes_ListElem {
+  margin-left: 25px;
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+.Quotes_ListElem ul {
+  list-style: none;
+  padding: initial;
+}
+
+
+.Quotes_ListElem p {
+  color: #FFF1BD;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  text-align: center;
+
+
+}
+
+.Quotes_ListElem h1 {
+  font-size: 50px;
+  font-weight: 900;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 0.5%;
+  text-align: center;
+
+}
+
+
+ul.navbar-nav li.nav-item a.nav-link, ul.navbar-nav li.nav-item.active a.nav-link {
+  color: #FEE3D3;
+}
+
+.top-header-area {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  background-color: #11052C;   /* not necessary */
+  padding: 0.5% 0;
+}
+
+
+
+
+nav.main-menu ul li {
+  display: inline-block;
+  position: relative;
+}
+nav.main-menu ul li a {
+  color: #fff;
+  font-weight: 700;
+  display: block;
+  padding: 15px;
+}
+
+/* -----------------------------------------------------------------------------
+
+# Footer Styles
+
+----------------------------------------------------------------------------- */
+
+.footer-area {
+  display: flex;
+  flex: wrap wrap;
+  justify-content: center;
+  background-color: #281d41;
+  color: #fff;
+
+}
+h2.widget-title {
+  font-size: 24px;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+/* .single-logo-item img {
+  max-width: 180px;
+  margin: 0 auto;
+} */
+
+
+.sub {
+  display: inline-block;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+h2.widget-title:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #FFE3D3;
+  content: "";
+  margin-left: 0.5%;
+}
+.sub li {
+  
+  color: white;
+  list-style: none;
+  padding-left: 1%;
+
+}
+
+.sub li a, a:visited, a:hover, a:active {
+  color: #ffe3d3;
+}
+
+
+/* -----------------------------------------------------------------------------
+
+# GameOverFlow Styles
+
+----------------------------------------------------------------------------- */
+.gameOVERFLOW-bg {
+  background-image: url("../img/Bg\ GameOverFlow.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+  
+}
+
+.gameOVERFLOW-text {
+  display: table;
+  height: 100%;
+}
+
+.gameOVERFLOW-text-tablecell {
+  display: table-cell;
+  text-align: center;
+}
+
+
+
+html, body {
+  height: 100%;
+  
+}
+
+
+.gameOVERFLOW-text p.subtitle {
+padding-bottom: 1.5%;
+  color: #FEE3D3;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size: 15px;
+
+}
+
+.gameOVERFLOW-text h1 {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,91); /* Black w/opacity/see-*/
+  padding-bottom: 0.9%;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #fff;
+}
+
+.gameOVERFLOW-area div {
+  height: 100%;
+}
+
+.gameOVERFLOW-area {
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.gameOVERFLOW-area:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: #11052C;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.gameOVERFLOW-area div.gameOVERFLOW-text {
+  height: 100%;
+  width: 100%;
+}
+
+.gameOVERFLOW-area div.gameOVERFLOW-text-tablecell {
+  height: auto;
+  vertical-align: middle;
+}
+
+.gameOVERFLOW-area div.gameOVERFLOW-text-tablecell div {
+  height: auto;
+  vertical-align: middle;
+}
+
+
+.gameOVERFLOW-area div.gameOVERFLOW-form {
+  background-color: #fff;
+  text-align: center;
+  width: 380px;
+  margin: 0 auto;
+  margin-right: 0;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 15px #2d2d2d;
+  box-shadow: 0 0 15px #2d2d2d;
+  position: absolute;
+  right: 30px;
+  bottom: -15%;
+  height: 600px;
+}
+
+input[type="submit"] {
+  background-color: #FFE3D3;
+  color: #11052C;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 15px;
+  border: none !important;
+  cursor: pointer;
+  padding: 15px 25px;
+  border-radius: 120px;
+  margin-bottom: 1.5%;
+  margin-top: 1.5%;
+}
+
+.homepage-slider {
+  height: 100%;
+}
+
+.homepage-slider div {
+  height: 100%;
+}
+
+.homepage-slider div.gameOVERFLOW-text {
+  display: table;
+  width: 100%;
+}
+
+.homepage-slider div.gameOVERFLOW-text-tablecell {
+  height: auto;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.homepage-slider div.gameOVERFLOW-text-tablecell div {
+  height: auto;
+}
+
+.single-homepage-slider {
+  background-size: cover;
+  background-position: center;
+  background-color: #020C0E;
+  position: relative;
+  z-index: 1;
+}
+
+.single-homepage-slider:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #11052C;
+  content: "";
+  z-index: -1;
+  opacity: 0.7;
+}
+
+
+/* -----------------------------------------------------------------------------
+
+# About Page Styles
+
+----------------------------------------------------------------------------- */
+/* developer card information */
+.testimonail-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+/* after lorem of the our team */
+  .client-avater {
+    margin-bottom: 20px;
+  }
+  .client-avater img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  .client-meta h3 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .client-meta h3 span {
+    display: block;
+    font-size: 70%;
+    margin-top: 10px;
+    color: white;
+    font-weight: 600;
+    opacity: 0.5;
+  }
+
+  /* github account hover */
+
+		a input:hover {
+            background-color:  #FEE3D3;
+            color: white;
+        }
+		a input{
+			width:100px; height:30px; border-radius: 120px; 
+		}
+
+
+    .section-title h3 {
+      font-size: 40px;
+      position: relative;
+      padding-bottom: 15px;
+      text-align: center;
+      margin-top: 50px;
+    }
+  
+    .section-title h3:after {
+      position: absolute;
+      content: '';
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      width: 50px;
+      height: 2px;
+      background-color: #474A61;
+      margin: 0 auto;
+    }
+  
+    .section-title p {
+      font-size: 15px;
+      width: 530px;
+      margin: 0 auto;
+      color: #FFE3D3;
+      margin-top: 10px;
+      line-height: 1.8;
+    }
+  
+    .section-title {
+      margin-bottom: 80px;
+    }
+    .coloring-team-text {
+      color: #474A61;
+      
+    }
+
+
+/* -----------------------------------------------------------------------------
+
+# Contact Page Styles
+
+----------------------------------------------------------------------------- */
+.form-title {
+  margin-bottom: 25px;
+}
+
+.form-title h2 {
+  font-size: 25px;
+}
+
+.form-title p {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.form-title ul{
+  list-style: none;
+}
+.form-section {
+  display: flex;
+  width: 25%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+/* Name - Email - Phone - Subject | Box Input */
+.contact-form form p input[type=text], .contact-form form p input[type=tel], .contact-form form p input[type=email] {
+  width: 49%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 15px;
+}
+/* help */
+form p input[type=text] {
+  border: 1px solid #ddd;
+  color: #11052C;
+  padding: 15px;
+  width: 49%;
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+.contact-form form p textarea {
+  border: 1px solid #ddd;
+  padding: 15px;
+  height: 200px;
+  border-radius: 3px;
+  width: 100%;
+  resize: none;
+}
+
+.contact-form-wrap {
+  background-color: #FBFBFB;
+  padding: 45px 30px;
+  border-radius: 5px;
+}
+
+.contact-form-box {
+  padding-left: 40px;
+  margin-bottom: 30px;
+}
+
+.contact-form-box h4 {
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.contact-form-box h4 i {
+  position: absolute;
+  left: -13%;
+  color: #FFF1BD;
+  top: 2px;
+}
+
+.contact-form-box p {
+  line-height: 1.8;
+  opacity: 0.8;
+}
+
+.contact-form-wrap .contact-form-box:last-child {
+  margin: 0;
+}
+
+.contact-form form p {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* -----------------------------------------------------------------------------
+
+# itemGallery Page Styles
+
+----------------------------------------------------------------------------- */
+
+/* what is this? */
+.product-section {
+  display: flex;
+  justify-content: center;
+}
+
+.single-product-item {
+  margin-bottom: 30px;
+  background-color: #281d41
+   ;
+}
+.single-product-item h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.product-image {
+  padding: 30px;
+  padding-bottom: 0;
+  background-color: #FFE3D3; /*item bg*/
+  border-radius: 120px;
+  margin-top: 30px;
+}
+
+.product-image img {
+  /* width: 30%;
+  border-radius: 5px; */
+  margin-bottom: 20px;
+
+}
+
+.single-product-item {
+  /* -webkit-box-shadow: 0 0 11px #FFE3D3; */
+  box-shadow: 0 0 50px #FFE3D3;
+  padding-bottom: 50px;
+  border-radius: 120px;
+}
+
+#productIMG{
+  width: 300px;
+  
+}
+/* valid */ /* prodcut description */ 
+p.product-price {
+  font-family: 'Poppins', sans-serif;
+  /* font-size: 30px;
+  font-weight: 700; */
+  margin-bottom: 15px;
+}
+/* valid */ /* prodcut price */ 
+p.product-price span {
+  display: block;
+  opacity: 0.8;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* -----------------------------------------------------------------------------
+
+# cart Page Styles
+
+----------------------------------------------------------------------------- */
+table {
+  text-align: center;
+}
+
+/* Quantity input area */
+input[type="number"] {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+
+table.cart-table {
+  border: 1px solid #f9f9f9;
+  width: 100%;
+}
+
+thead {
+  border-bottom: 1px solid #eee;
+}
+/* the th styling in the cart page */
+tr.table-head-row th {
+  /* border-right: 1px solid #efefef; */
+  padding: 15px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #281D41;
+  
+}
+thead.cart-table-head tr {
+  background-color: #ffe3d3;
+}
+
+tr.table-head-row th:first-child {
+ border: 2px solid;
+  /* border-radius: 10%; */
+  
+  
+}
+
+
+/* product-image in the cart page */
+td.product-image img {
+  /* -webkit-box-shadow: none;
+  box-shadow: none; */
+  margin-bottom: 0px;
+}
+/* everything inside the table under the thead */
+/* needed */
+.cart-table-wrap tbody tr td {
+  border: 1px solid #efefef;
+  padding: 20px 0px;
+  color: white;
+  text-align: center;
+}
+
+/* the Total || Price ROWS Styling the head */
+tr.table-total-row th {
+  font-weight: 500;
+  font-size: 15px;
+  padding: 15px;
+  background-color: #281d41;
+}
+/* valid */ /* Border of the table row head */ 
+.total-section table.total-table {
+  border: 1px solid #efefef;
+  width: 100%;
+}
+/* valid */ /* Border of the table data */ 
+table.total-table tbody tr.total-data td {
+  border: 1px solid #efefef;
+  padding: 19px 15px;
+}
+/* valid */ /* Subtotal, Shipping, Total */
+tr.total-data td strong {
+  margin-right: 32px;
+}
+
+/*  Update cart Btn */
+.cart-buttons {
+  /* margin-top: 30px; */
+  text-align: center;
+}
